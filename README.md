@@ -1,5 +1,5 @@
 # Movie Explorer App
-
+---
 A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
 ---
 
