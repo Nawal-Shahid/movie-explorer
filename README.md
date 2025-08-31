@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# Movie Explorer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
+---
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* **Movie Discovery** – Browse popular, top-rated, and now-playing movies
+* **Detailed Movie Information** – View cast, genres, runtime, and production companies
+* **Genre Filtering** – Explore movies by category
+* **Search Functionality** – Find movies by title or keywords
+* **User Authentication** – Sign up and log in (powered by Firebase)
+* **Favorites System** – Save and manage your favorite movies
+* **Responsive Design** – Works seamlessly on desktop, tablet, and mobile
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Frontend:** React 18, React Router v6
+* **State Management:** Context API
+* **Styling:** Tailwind CSS
+* **Authentication:** Firebase Auth
+* **API:** TMDB API
+* **Icons:** React Icons
+* **Build Tool:** Create React App
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```
+src/
+├── api/
+│   └── tmdb.js               # TMDB API config
+├── components/
+│   ├── BookmarkButton.js     # Toggle favorite
+│   ├── MovieCard.js          # Individual movie card
+│   ├── MovieGrid.js          # Movie grid layout
+│   ├── Navbar.js             # Navigation bar
+│   └── SearchBar.js          # Search input
+├── context/
+│   ├── AuthContext.js        # Authentication state
+│   └── FavoritesContext.js   # Favorites state
+├── firebase/
+│   └── config.js             # Firebase setup
+├── pages/
+│   ├── Favorites.js          # Saved movies
+│   ├── Home.js               # Homepage
+│   ├── Login.js              # User login
+│   ├── MovieDetail.js        # Movie details
+│   ├── SearchResults.js      # Search results
+│   └── Signup.js             # User registration
+├── styles/
+│   ├── global.css
+│   └── index.css
+├── App.js
+├── App.test.js
+└── index.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+* [Node.js](https://nodejs.org/) (v14 or higher)
+* npm or yarn
+* TMDB API key
+* Firebase project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone <repository-url>
+   cd movie-explorer
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Create a `.env` file in the root folder and add:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```env
+   REACT_APP_TMDB_API_KEY=your_tmdb_api_key_here
+   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key_here
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+   ```
 
-### Code Splitting
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### TMDB API Setup
 
-### Advanced Configuration
+* Create an account on [TMDB](https://www.themoviedb.org/)
+* Request an API key
+* Add it to `.env`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Firebase Setup
 
-### Deployment
+* Create a Firebase project in [Firebase Console](https://console.firebase.google.com/)
+* Enable **Authentication → Email/Password**
+* Copy project config into `.env`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Browse movies by category
+* Search by title or keyword
+* Filter by genre
+* Save favorites (requires login)
+* View details including overview, rating, and runtime
+
+---
+
+## License
+
+This project is licensed under the **MIT License** 
+
+---
+
+## Acknowledgments
+
+* [The Movie Database (TMDB)](https://www.themoviedb.org/) for the movie data
+* [Firebase](https://firebase.google.com/) for authentication
+* [Tailwind CSS](https://tailwindcss.com/) for styling
+
+---
+
