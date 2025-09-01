@@ -1,39 +1,35 @@
 # Movie Explorer App
 
 A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
-
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=netlify)](https://pick-ur-movie.netlify.app/)
-
----
 
 ## Features
 
-- **Movie Discovery** – Browse popular, top-rated, and now-playing movies  
-- **Detailed Movie Information** – View cast, genres, runtime, and production companies  
-- **Genre Filtering** – Explore movies by category  
-- **Search Functionality** – Find movies by title or keywords  
-- **User Authentication** – Sign up and log in (powered by Firebase)  
-- **Favorites System** – Save and manage your favorite movies  
-- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile  
+* **Movie Discovery** – Browse popular, top-rated, and now-playing movies
+* **Detailed Movie Information** – View cast, genres, runtime, and production companies
+* **Genre Filtering** – Explore movies by category
+* **Search Functionality** – Find movies by title or keywords
+* **User Authentication** – Sign up and log in (powered by Firebase)
+* **Favorites System** – Save and manage your favorite movies
+* **Responsive Design** – Works seamlessly on desktop, tablet, and mobile
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React 18, React Router v6  
-- **State Management:** Context API  
-- **Styling:** Tailwind CSS  
-- **Authentication:** Firebase Auth  
-- **API:** TMDB API  
-- **Icons:** React Icons  
-- **Build Tool:** Create React App  
+* **Frontend:** React 18, React Router v6
+* **State Management:** Context API
+* **Styling:** Tailwind CSS
+* **Authentication:** Firebase Auth
+* **API:** TMDB API
+* **Icons:** React Icons
+* **Build Tool:** Create React App
 
 ---
 
 ## Project Structure
 
 ```
-
 src/
 ├── api/
 │   └── tmdb.js               # TMDB API config
@@ -61,8 +57,7 @@ src/
 ├── App.js
 ├── App.test.js
 └── index.js
-
-````
+```
 
 ---
 
@@ -70,24 +65,26 @@ src/
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14 or higher)  
-- npm or yarn  
-- TMDB API key  
-- Firebase project  
+* [Node.js](https://nodejs.org/) (v14 or higher)
+* npm or yarn
+* TMDB API key
+* Firebase project
 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd movie-explorer
-
+   ```
 
 2. Install dependencies:
 
    ```bash
    npm install
    ```
+
 3. Create a `.env` file in the root folder and add:
 
    ```env
@@ -99,13 +96,14 @@ src/
    REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_sender_id
    REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
    ```
+
 4. Start the development server:
 
    ```bash
    npm start
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
@@ -137,7 +135,7 @@ src/
 
 ## License
 
-This project is licensed under the **MIT License**
+This project is licensed under the **MIT License** 
 
 ---
 
@@ -147,3 +145,4 @@ This project is licensed under the **MIT License**
 * [Firebase](https://firebase.google.com/) for authentication
 * [Tailwind CSS](https://tailwindcss.com/) for styling
 
+---
