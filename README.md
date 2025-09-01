@@ -1,3 +1,5 @@
+# Movie Explorer App [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/pick-ur-movie/deploys)
+
 # Movie Explorer App
 
 A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
