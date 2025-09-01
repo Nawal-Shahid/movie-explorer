@@ -1,4 +1,4 @@
-# Movie Explorer App [![Netlify Status](https://api.netlify.com/api/v1/badges/04893a81-0f99-4f59-9906-c6d0b2446935/deploy-status)](https://app.netlify.com/projects/pick-ur-movie/deploys)
+# Movie Explorer App [![Netlify Status](https://api.netlify.com/api/v1/badges/04893a81-0f99-4f59-9906-c6d0b2446935/deploy-status)](https://app.netlify.com/sites/pick-ur-movie/deploys)
 
 A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=netlify)](https://pick-ur-movie.netlify.app/)
@@ -15,24 +15,25 @@ A modern **React-based web application** for discovering and exploring movies us
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🏠 Home Page
+### Home Page
 ![Home Page](https://github.com/user-attachments/assets/d67883bb-2b96-4e5e-aeb4-1b5ee5a8c892)
 *Browse trending movies with beautiful card layout*
 
-### 🎬 Movie Details  
+### Movie Details  
 ![Movie Details](https://github.com/user-attachments/assets/5969e01b-fb92-4dfc-bb41-263ad54b02f1)
 *Detailed movie information with cast and description*
 
-### 🔐 User Authentication
+### User Authentication
 ![Login Page](https://github.com/user-attachments/assets/b670d1a6-1689-4c85-8c17-8d8e380ff02a)
 ![Signup Page](https://github.com/user-attachments/assets/1a0d03c7-2267-496c-9faa-0ede40f8f40b)
 *Secure user login/signup with Firebase authentication*
 
-### ❤️ Favorites Management
+### Favorites Management
 ![Favorites Page](https://github.com/user-attachments/assets/b76ee82d-c441-46bd-9eb0-a048ad042539)
 *Save and manage your favorite movies with heart icons*
+
 ---
 
 ## Project Structure
