@@ -1,8 +1,3 @@
-Got it 👍 — I’ll clean up your **README.md** to make it professional and minimal (no emojis), but still keep the **live demo badge** and neat formatting.
-
-Here’s the improved version without emojis:
-
-```markdown
 # Movie Explorer App
 
 A modern **React-based web application** for discovering and exploring movies using data from **The Movie Database (TMDB) API**.
@@ -86,7 +81,7 @@ src/
    ```bash
    git clone <repository-url>
    cd movie-explorer
-````
+
 
 2. Install dependencies:
 
