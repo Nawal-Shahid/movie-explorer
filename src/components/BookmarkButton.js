@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const BookmarkButton = ({ movie }) => {
-  const { addFavorite, removeFavorite, isFavorite, hasUser } = useFavorites();
+  const { addFavorite, removeFavorite, isFavorite } = useFavorites();
   const { user } = useAuth();
   const navigate = useNavigate();
   const favorite = isFavorite(movie.id);
